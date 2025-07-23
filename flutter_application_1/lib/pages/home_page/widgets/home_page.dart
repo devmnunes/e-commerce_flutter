@@ -6,18 +6,60 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+     
     return Scaffold(
       backgroundColor: Colors.white,
       body: Stack(
         children: <Widget>[
-
-          Center(
+          Positioned(
+            top: -200 / 4.7,
+            right: -138 / 1.6,
             child: Opacity(
-              opacity: 0.3,
-              child: Image.asset( ConstsApp.blackPokeball,
-              height: 300,
-              width: 300,))), 
-         
+              opacity: 0.2,
+              child: Image.asset(
+                ConstsApp.blackPokeball,
+                height: 240,
+                width: 240,
+              ),
+            ),
+          ),
+          Container(
+            child: Column(
+              children: <Widget>[
+                Container(
+                  height: 28,
+                ),
+                Container(
+                  child: Container(
+                    child: Column(
+                      children: [
+                        Container(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: <Widget>[
+                              Padding(
+                                padding: const EdgeInsets.only(top: 29, right: 14),
+                                child: IconButton(icon: Icon(Icons.menu),
+                                onPressed: () {},
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Text('Pokedex'),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  height: 150,
+                )
+              ],
+            ),
+          )
         ],
       ),
     );
