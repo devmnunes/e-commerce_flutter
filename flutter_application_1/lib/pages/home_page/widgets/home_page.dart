@@ -10,7 +10,14 @@ class HomePage extends StatelessWidget {
       backgroundColor: Colors.white,
       body: Stack(
         children: <Widget>[
-          Image.asset( ConstsApp.blackPokeball),
+
+          Center(
+            child: Opacity(
+              opacity: 0.3,
+              child: Image.asset( ConstsApp.blackPokeball,
+              height: 300,
+              width: 300,))), 
+         
         ],
       ),
     );
