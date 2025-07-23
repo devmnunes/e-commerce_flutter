@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/consts/consts_app.dart';
+import 'package:flutter_application_1/pages/home_page/widgets/app_bar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -29,33 +30,19 @@ class HomePage extends StatelessWidget {
                 Container(
                   height: 28,
                 ),
-                Container(
+                AppBarHome(),
+                Expanded(
                   child: Container(
-                    child: Column(
-                      children: [
-                        Container(
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: <Widget>[
-                              Padding(
-                                padding: const EdgeInsets.only(top: 29, right: 14),
-                                child: IconButton(icon: Icon(Icons.menu),
-                                onPressed: () {},
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Text('Pokedex'),
-                          ],
-                        ),
+                    child: ListView(
+                      children: <Widget>[
+                        ListTile(title: Text('Pokemon'),),
+                  
+                  
+                  
+                  
                       ],
                     ),
                   ),
-                  height: 150,
                 )
               ],
             ),
