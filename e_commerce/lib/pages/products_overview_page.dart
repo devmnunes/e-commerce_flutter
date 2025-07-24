@@ -9,6 +9,7 @@ class ProductsOverviewPage extends StatelessWidget {
   ;
   ProductsOverviewPage({super.key});
 
+  
   @override
   Widget build(BuildContext context) {
     final provider = Provider.of<ProductList>(context);
