@@ -1,4 +1,6 @@
+import 'package:e_commerce/pages/product_detail_page.dart';
 import 'package:e_commerce/pages/products_overview_page.dart';
+import 'package:e_commerce/utils/app_routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -30,6 +32,10 @@ class MyApp extends StatelessWidget {
       fontFamily: 'Lato',
       ),
       home: ProductsOverviewPage(),
+      routes: {
+        AppRoutes.PRODUCT_DETAIL: (ctx) => ProductDetailPage(),
+
+      },
     );
   }
 }

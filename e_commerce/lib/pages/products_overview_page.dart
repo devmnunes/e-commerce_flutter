@@ -18,6 +18,8 @@ class ProductsOverviewPage extends StatelessWidget {
             crossAxisCount: 2,
             childAspectRatio: 3 / 2,
             crossAxisSpacing: 10,
+            mainAxisSpacing: 10,
+            
           ),
           itemCount: loadProducts.length,
           itemBuilder: (ctx, i) => ProductItem(product: loadProducts[i]),
