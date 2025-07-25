@@ -6,14 +6,14 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class ProductsOverviewPage extends StatelessWidget {
-  ;
+  
   ProductsOverviewPage({super.key});
 
   
   @override
   Widget build(BuildContext context) {
     final provider = Provider.of<ProductList>(context);
-    final List<Product> loadedProducts = provider.items;
+    final List<Product> loadProducts = provider.items;
     
     return Scaffold(
       appBar: AppBar(title: Text('Minha Loja')),
